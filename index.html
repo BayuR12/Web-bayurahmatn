@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAOSKEREN.ID</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .main-heading {
+            text-align: center;
+            background-color: #000;
+            /* Warna hitam */
+            color: #fff;
+            padding: 10px;
+            font-size: 24px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1001;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-heading .logo {
+            margin-left: 20px;
+        }
+
+        nav {
+            background-color: #900;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #b00;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 120px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #home {
+            background-color: #eee;
+        }
+
+        .services,
+        .products,
+        .contact {
+            background-color: #900;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px;
+            background-color: #900;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #b00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-heading">
+        <div class="logo">KAOSKEREN.ID</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Layanan Kami</a></li>
+                <li><a href="#products">Produk Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="home">
+        <div>
+            <h1>Selamat Datang di KAOSKEREN.ID</h1>
+            <p>Temukan koleksi kaos terbaik dan berkualitas di sini.</p>
+            <button>Selengkapnya</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>LAYANAN KAMI</h2>
+        <p>Selamat datang di KaosKeren.ID, tempat di mana gaya kasual bertemu dengan kualitas terbaik. Kami adalah toko
+            yang mengkhususkan diri dalam menyediakan kaos dengan desain kreatif dan unik yang mencerminkan karakter dan
+            kepribadian Anda. Dengan berbagai pilihan desain yang selalu up-to-date dan bahan yang nyaman, kami
+            berkomitmen untuk memberikan pengalaman berbelanja yang memuaskan bagi setiap pelanggan. Didirikan dengan
+            semangat untuk memberikan sesuatu yang berbeda, kami percaya bahwa kaos bukan hanya sekadar pakaian, tetapi
+            juga cara untuk mengekspresikan diri. Baik Anda mencari gaya simpel, trendi, atau desain yang bold, kami
+            punya sesuatu untuk semua orang.</p>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Desain Custom</h3>
+                <p>Layanan desain kaos sesuai permintaan pelanggan.</p>
+            </div>
+            <div class="card">
+                <h3>Pengiriman Cepat</h3>
+                <p>Pengiriman produk dalam waktu yang cepat dan tepat.</p>
+            </div>
+            <div class="card">
+                <h3>Konsultasi</h3>
+                <p>Konsultasi gratis untuk desain kaos dan pilihan bahan terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>PRODUK KAMI</h2>
+        <p>Berbagai pilihan produk terbaik untuk melengkapi gaya Anda.</p>
+        <div class="product-cards">
+            <div class="card">
+                <h3>Kaos Distro</h3>
+                <img src="images.jpg" width="kaos distro">
+            </div>
+            <div class="card">
+                <h3>Kaos POLO</h3>
+            </div>
+            <div class="card">
+                <h3>Kaos Premium</h3>
+                <p>Kaos dengan bahan premium yang nyaman dipakai.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>HUBUNGI KAMI</h2>
+        <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi kami.</p>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
