@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaosKeren.ID</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -69,19 +70,30 @@
                     <img src="Kaos 1.jpg" alt="Produk 1">
                     <p>Kaos Luffy</p>
                     <p>Rp. 95.000,00</p>
+                    <button class="buy-button" onclick="showCheckout('Kaos Luffy', 'Rp. 95.000,00')">Beli</button>
                 </div>
                 <div class="product-item">
                     <img src="Kaos 2.jpg" alt="Produk 2">
                     <p>Kaos Journey</p>
                     <p>Rp. 95.000,00</p>
+                    <button class="buy-button" onclick="showCheckout('Kaos Journey', 'Rp. 95.000,00')">Beli</button>
                 </div>
                 <div class="product-item">
                     <img src="Kemeja.jpg" alt="Produk 3">
                     <p>Kemeja FalProject</p>
                     <p>Rp. 100.000,00</p>
+                    <button class="buy-button" onclick="showCheckout('Kemeja FalProject', 'Rp. 100.000,00')">Beli</button>
                 </div>
             </div>
         </section>
+        
+        <div id="checkout-section" class="checkout-section" style="display: none;">
+            <h3>Checkout</h3>
+            <p id="product-name"></p>
+            <p id="product-price"></p>
+            <button onclick="hideCheckout()">Tutup</button>
+        </div>
+        
 
         <section id="kontak" class="contact-section">
             <h2>Hubungi Kami</h2>
